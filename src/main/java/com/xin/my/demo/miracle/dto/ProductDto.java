@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 /**
  * @version : 1.0
  * @author: lyf
@@ -11,13 +13,9 @@ import lombok.Setter;
  */
 
 @Data
-@Getter
 @Setter
-public class UserDto {
+@Getter
+public class ProductDto implements Serializable {
 
-    private String name;
-
-    private Integer code;
-
-
+    private static final long serialVersionUID = -233995175761954542L;
 }
